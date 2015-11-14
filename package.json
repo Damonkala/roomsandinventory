@@ -22,10 +22,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Damonkala/mongoosemessageboard.git"
+    "url": "https://github.com/CodingHouseFI/inventory-manager"
   },
   "bugs": {
-    "url": "https://github.com/Damonkala/mongoosemessageboard"
+    "url": "https://github.com/CodingHouseFI/inventory-manager"
   },
-  "homepage": "https://github.com/Damonkala/mongoosemessageboard"
+  "homepage": "https://github.com/CodingHouseFI/inventory-manager"
 }
