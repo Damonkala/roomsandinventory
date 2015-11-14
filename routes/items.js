@@ -7,7 +7,7 @@ var Item = require('../models/item');
 
 router.get('/', function(req, res){
 	Item.find({}, function(err, items) {
-		console.log(items);
+		res.send(items);
 	});
 });
 

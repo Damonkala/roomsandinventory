@@ -12,15 +12,23 @@ function getRooms(){
 $.get('/rooms', function(data){
   for(var i = 0; i < data.length; i++){
     var nom = data[i].name;
+    var val = data[i].value;
+    var desc = data[i].description;
     var $room = $('<tr>')
     $room.addClass('box');
+    var $newName = $('<input>');
+    $newName.addClass('.newItemName');
+    var $newValue = $('<input>');
+    $newValue.addClass('.newItemValue');
+    var $newDescription = $('<input>');
+    $newDescription.addClass('.newItemDescription');
     var $but = $('<button>');
     $but.addClass('showhide');
     $but.attr('id', i);
     $but.text("Show Items");
     var $roomCount = $('<div>').text(i + 1);
     $roomCount.addClass('numBox');
-    $room.append($roomCount, nom, $but);
+    $room.append($roomCount, nom, val, desc, $but);
     var $items = $('<div>');
     $items.addClass('ites');
     $items.attr('dataValue', i);
