@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "mongoose": "~4.2.5"
   },
   "authors": [
     "Damon Kalaboukis <damonkala@yahoo.com>"
