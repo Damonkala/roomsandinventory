@@ -1,13 +1,31 @@
 doctype html
 html(lang="en")
   head
-    title Home
-    link(href="bower_components/bootstrap/dist/css/bootstrap.min.css")
-    link(href="css/style.css")
+    title Inventory
+    link(href="bower_components/bootstrap/dist/css/bootstrap.min.css", rel='stylesheet')
+    link(href="css/style.css", rel='stylesheet')
+    div(class= rooms[0]._id.toString())
   body
-    .container
-      br
-      .jumbotron
-        h1 Hey!
+  label Add an room
+  input(id="roomName", placeholder="Room Name")
+  button(id="saveRoom") Add Room
+  &nbsp;
+  label Add an item
+  input(id="itemName", placeholder="Item Name")
+  input(id="itemValue", placeholder="Item Value")
+  input(id="itemDescription", placeholder="Item description")
+  button(id="saveItem") Add Item
+  &nbsp;
+  table.table
+    thead
+       tr
+         th Room
+
+    tbody#rooms
+
+    
+      
+          td
+    
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='js/main.js')
