@@ -16,5 +16,8 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5"
-  }
+  },
+  "authors": [
+    "Damon Kalaboukis <damonkala@yahoo.com>"
+  ]
 }
